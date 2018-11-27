@@ -1,0 +1,20 @@
+Directions for building the full application.
+1. Copy/Download the MeteorBlasterDriver.zip and MeteorBlasterGUI2.jar files.
+2. Unzip the MeteorBlasterDriver.zip project.
+3. Open up the MeteorBlasterDriver application in NetBeans.
+4. Right click Libraries, select Add Jar/Folder
+5. Navigate to and select the MeteorBlasterGUI2.jar file.
+6. Clean and Build your MeteorBlasterBackend project. My code is expecting
+   the package name meteorblasterbackend (all lowercase). 
+7. Right click Libraries in the MeteorBlasterDriver project again, select Add Jar/Folder
+8. Select your meteorblasterbackend.jar file.
+9. You should now have three libaries associated with the MeteorBlasterDriver project:
+   JDK 1.8, meteorblasterGUI2, meteorblasterbackend
+10. Set the working directory to the root of the MeteorBlasterDriver project directory.  It
+    contains the images and config directories.
+11. Add the command line arguments/parameters.  The MeteorBlasterDriver project is a JavaFX 
+    project so setting the command line arguments is different. Go to the customize page as
+    usual but click the Edit on the Parameters line. Click the add button and type 
+    config/meteorBlasterConfig.txt in the Name text box.  Click add again and type
+    config/gameData.txt in the Name box on the second line.
+12.  Click OK on the customize window and run the project.
